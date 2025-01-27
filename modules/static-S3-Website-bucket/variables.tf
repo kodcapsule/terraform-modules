@@ -10,6 +10,6 @@ variable "tags" {
     type = map(string)
 
     default = {
-      "env" = "dev"
+      "env" = "Dev"
     }
   }
