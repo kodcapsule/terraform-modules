@@ -74,7 +74,8 @@ terrform-modules/
 │         │   └── error.html
 │         └── LICENSE
 ├── .gitignore     
-├── main.tf    
+├── main.tf 
+├── Readme.md   
 └── outputs.tf   
 ```
 **Step 2. writing the modules variables**
@@ -330,9 +331,9 @@ Here are some best practices to follow when writing and using modules.
 1. Always parameterize your modules. 
 2. Follow the "DRY" Principle (Don’t Repeat Yourself)
 3. Write Documentation for your Modules 
-4.Avoid hardcoding sensitive data (e.g., keys, passwords) in your module variables. 
+4. Avoid hardcoding sensitive data (e.g., keys, passwords) in your module variables. 
 
 ## 9. Conclusion
-Well well, we have come to the end of this deep dive into terraform modules. There are other advance topics about terraform modules that are not covered in this tutorial. To learn more about terrafrom modules , visit the official Terraform page,[Terraform page](https://developer.hashicorp.com/terraform/language/modules )  . Don't forget to add your comments , till then keep coding. 
+Well well, we have come to the end of this deep dive into terraform modules. There are other advance topics about terraform modules that are not covered in this tutorial. To learn more about terrafrom modules , visit the official [Terraform page](https://developer.hashicorp.com/terraform/language/modules )  . Don't forget to add your comments , till then keep coding. 
 
 Thanks
