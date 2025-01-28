@@ -202,7 +202,7 @@ output "website-domian" {
 
 
 **Step 5. writing the Readme and License files**
-For the README file a dettailed description of how to use the module is proivded. A sample Licence is also provided in the LICENSE file. You can generate your own licencse file using Choose a License,k https://choosealicense.com/
+For the README file a dettailed description of how to use the module is proivded. A sample Licence is also provided in the LICENSE file. You can generate your own licencse file using [Choose a License](https://choosealicense.com/) 
 
 
 ## 6 Using a Terraform Module.
@@ -318,6 +318,21 @@ After terraform creates the  infrastructure , you can now upload your static fil
 The static files for this peoject are found in the www folder. 
 You can upload the files using AWS console or AWS CLI.  
 
+**1.Uploading static files using AWS CLI**
+```bash
+aws s3 cp modules/static-S3-Website-bucket/www/ s3://<YOUR BUCKET NAME>/ --recursive
+
+```
+replace <YOUR BUCKET NAME> with the name of your bucket
+
 ## 8. Best Practices for Terraform Modules
+Here are some best practices to follow when writing and using modules.
+1. Always parameterize your modules. 
+2. Follow the "DRY" Principle (Don’t Repeat Yourself)
+3. Write Documentation for your Modules 
+4.Avoid hardcoding sensitive data (e.g., keys, passwords) in your module variables. 
 
 ## 9. Conclusion
+Well well, we have come to the end of this deep dive into terraform modules. There are other advance topics about terraform modules that are not covered in this tutorial. To learn more about terrafrom modules , visit the official Terraform page,[Terraform page](https://developer.hashicorp.com/terraform/language/modules )  . Don't forget to add your comments , till then keep coding. 
+
+Thanks
